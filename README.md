@@ -12,3 +12,15 @@ Steps taken to create and publish website:
     git push -u origin master
     <Set Github repo to use master branch as hosted page content>
     <Created README.md>
+
+Github Actions workflow added: 
+    -Removed hosted page settings within github
+    -Added deploy.yaml file in .github/workflows folder with prebuilt job to push updates to github-pages
+    -Committed and pushed new content
+    -Confirmed execution of new workflow
+    --Challenges: 
+        -Working from new workstation, credentials not cached for GitHub. SSH public key not yet configured for 
+        this repo. 
+        --Solution: 
+            -Created access token, configured permissions, loaded token to new device. 
+            -Long term, need to configure SSH key for this repo and set up git clone with SSH instead of HTTPS
